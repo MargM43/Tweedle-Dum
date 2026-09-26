@@ -14,7 +14,8 @@
     --shadow-clr: rgb(128, 114, 128);
     --shadow-light: rgb(59, 58, 58);
     --clr-secondary-400: #48556A;
-    --clr-betty: #83878d;
+    --betty-clr: #7e8ba1;
+    --nina-clr: #a4aec0;
 
     --font-family-text: "Poppins", sans-serif;
     --font-family-headings: "E B Garamond", serif;
@@ -339,10 +340,11 @@ span {
 } 
 
 .card__nina {
-    background-color: var(--Purple-pale);
+    background-color: var(--betty-clr);
+    
 }
 
-.card__nina .person
+.card__nina .person,
 .card__nina h2, 
 .card__nina p {
     color: var(--clr-Black);
@@ -350,7 +352,7 @@ span {
 } 
 
 .card__betty {
-    background-color: var(--clr-betty);
+    background-color: var(--betty-clr);
 }
 
 .card__betty .person, 
