@@ -1,0 +1,414 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    :root {
+    --bg-clr: #000;
+    --h-color: #ac2bac;
+    --link-clr: #df61d8;
+    --text-clr: #f1edf5;
+    --tagline-clr: #fff;
+    --background-light: #242222ee;
+    --shadow-clr: rgb(128, 114, 128);
+    --shadow-light: rgb(59, 58, 58);
+    --clr-secondary-400: #48556A;
+    --clr-betty: #7887a0;
+
+    --font-family-text: "Poppins", sans-serif;
+    --font-family-headings: "E B Garamond", serif;
+
+      --text-size--2: clamp(0.6076rem, 0.5149rem + 0.4945vw, 0.96rem);
+  --text-size--1: clamp(0.7292rem, 0.6053rem + 0.6608vw, 1.2rem);
+  --text-size-0: clamp(0.875rem, 0.7105rem + 0.8772vw, 1.5rem);
+  --text-size-1: clamp(1.05rem, 0.8329rem + 1.1579vw, 1.875rem);
+  --text-size-2: clamp(1.26rem, 0.9748rem + 1.5211vw, 2.3438rem);
+  --text-size-3: clamp(1.512rem, 1.1389rem + 1.9897vw, 2.9297rem);
+  --text-size-4: clamp(1.8144rem, 1.3282rem + 2.5933vw, 3.6621rem);
+  --text-size-5: clamp(2.1773rem, 1.5456rem + 3.3689vw, 4.5776rem);
+      
+  --heading-size--1: clamp(0.9375rem, 0.7105rem + 1.2105vw, 1.8rem);
+  --heading-size-0: clamp(1.125rem, 0.8289rem + 1.5789vw, 2.25rem);
+  --heading-size-1: clamp(1.35rem, 0.9651rem + 2.0526vw, 2.8125rem);
+  --heading-size-2: clamp(1.62rem, 1.1212rem + 2.6605vw, 3.5156rem);
+  --heading-size-3: clamp(1.944rem, 1.2991rem + 3.4393vw, 4.3945rem);
+  --heading-size-4: clamp(2.3328rem, 1.5011rem + 4.4356vw, 5.4932rem);
+  --heading-size-5: clamp(2.7994rem, 1.7291rem + 5.7082vw, 6.8665rem);
+   
+
+  --fluid-14-24: clamp(0.875rem, 0.7105rem + 0.8772vw, 1.5rem);
+}
+
+img {
+    max-block-size: 100%;
+    max-inline-size: 100%;
+}
+
+header img,
+footer img {
+    max-block-size: 4rem;
+}
+
+.tagline {
+    color: var(--link-clr);
+}
+
+
+h1, h2, h3 {
+    font-family: EB Garamond, serif;
+    color: var(--link-clr);
+    text-align: center;
+    font-size: var(--font-size-headings);
+}
+
+h1 {color: white;
+    font-size: var(--heading-size-2);
+
+}
+
+h2 {
+    
+    text-align: center;
+    margin-block: 4rem;
+    font-size: var(--heading-size-1);
+    
+ 
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-clr);
+}
+
+menu a {
+    color: white;
+    font-size: var(--text-size--1);
+}
+.brand-identifier {
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    color: var(--link-clr);
+}
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    background-color: black;
+    color: var(--text-clr);
+    font-family: var(--font-family-text);
+    font-size: var(--text-size--1);
+}
+
+header,
+footer {
+    display: flex;
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    justify-content: space-between;
+}
+
+header .brand-identifier,
+footer .brand-identifier {
+    display: flex;
+    align-items: center;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-inline: 1.5rem;
+    margin-block: 1rem;
+}
+
+.wrapper {
+    max-block-size: 100svb;
+    max-inline-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding-inline-start: 1.5rem;
+    /* padding-block: .5rem; */
+}
+
+.wrapper h2 {
+    font-size: var(--heading-size-0);
+}
+
+menu ul {
+    display: flex;
+    align-self: center;
+    padding-top: 1.5rem;
+    gap: 2rem;
+}
+
+.container {
+     width: 1400px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+main {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.gift-idea {
+    margin-inline: 9rem;
+    margin-block: 2rem;
+    border-block: 2px solid whitesmoke;
+    }
+
+
+.gift-idea h2 {
+    font-size: var(--heading-size-2);
+    color: white;
+    margin-block: 2rem;
+}
+
+.intro {
+    margin-block-end: 2rem;
+  
+}
+
+.image {
+      /* display: inline-flex;
+    flex-direction: column;
+    align-self: center; */
+    padding-block-start: 3rem;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.bronte, .cavvy, .gate-dog, .kuzie, .poppy, .millie2, .paddy3,
+.tie-dog, .ziggy {
+        min-height: 16rem;
+     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bronte {
+    background-image: url(/Images/Bronte.jpg);
+    background-position: top;
+}
+
+.cavvy {
+    background-image: url(/Images/Cavvy.webp);
+   
+}
+
+.gate-dog {
+    background-image: url(/Images/DogOnMat.webp);
+}
+
+.kuzie {
+    background-image: url(/Images/Kuzie.webp);
+}
+
+.poppy {
+    background-image: url(/Images/Poppy.webp);
+}
+
+.millie2 {
+    background-image: url(/Images/Millie2.webp);
+}
+
+.paddy3 {
+    background-image: url(/Images/Paddy\ 3.jpg);
+    background-position: center;
+}
+
+.tie-dog {
+    background-image: url(/Images/dogTie.webp);
+     background-position: top;
+}
+
+.ziggy {
+    background-image: url(/Images/Ziggy.webp);
+    background-position: top;
+}
+
+/* General settings for testimonials */
+.container__testimonials {
+
+ inline-size: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ padding-block: 2rem;
+ border-radius: 10px;
+ gap: 2rem;
+}
+
+
+/* card settings */
+.cards {
+    padding: 3rem;
+    border: 1px solid var(--shadow-clr);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--shadow-clr);
+   gap: 2rem;
+}
+
+.card {
+     padding: 1rem;
+    color: var(--clr-Black);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--shadow-clr);
+    margin-block-end: 2rem;
+} 
+
+/* Basic style settings */
+
+.icon img {
+     border: 2px solid var(--Grey-100);
+    border-radius: 50%;
+}
+.card__heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card h2 {
+    margin-block: 0;
+}
+
+.heavy {
+    font-weight: 800;
+    padding-block-end: 1rem;
+}
+
+
+span {
+    font-weight: var(--fw-3);
+    letter-spacing: 1.1px;
+}
+
+
+/* Individual card styles */
+
+.card__tuantina {
+    background-color: var(--link-clr);
+    color: var(--clr-Black);
+   
+}
+
+.card__tuantina h2 {
+    color: var(--clr-Black);
+    padding-block-end: 1rem;
+    padding-block-start: 0;
+}
+
+.card__peter {
+    background-color: var(--clr-secondary-400);
+}
+.card__peter h2 {
+    color: black;
+}
+
+.card__alex {
+    background-color: var(--h-color);
+    color: black;
+}
+
+
+.card__alex h2 {
+    color: var(--clr-Black);
+
+} 
+
+.card__nina {
+    background-color: var(--Purple-pale);
+}
+
+.card__nina .person
+.card__nina h2, 
+.card__nina p {
+    color: var(--clr-Black);
+    padding-block-end: 1rem;
+} 
+
+.card__betty {
+    background-color: var(--clr-betty);
+}
+
+.card__betty .person, 
+.card__betty p {
+    color: var(--bg-clr);
+    padding-block-end: 1rem;
+}
+
+.card__betty h2 {
+    color: var(--clr-Black);
+}
+
+
+/* layout */
+
+.article1 {
+    grid-area: tina;
+}
+.article2 {
+    grid-area: peter;
+}
+.article3 {
+    grid-area: betty;
+}
+.article4 {
+    grid-area: alex;
+}
+
+.article5 {
+    grid-area: nina;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tina"
+    "betty"
+    "alex"
+    "peter"
+    "nina";
+
+@media (width >= 800px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        grid-template-areas: 
+        "tina tina"
+        "peter nina"
+        "betty betty"
+        "alex alex";
+    }
+
+@media (width >= 1200px) {
+     grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        grid-template-areas: 
+        "tina tina peter alex"
+        "betty nina nina alex";
+}
+
+}
