@@ -14,7 +14,7 @@
     --shadow-clr: rgb(128, 114, 128);
     --shadow-light: rgb(59, 58, 58);
     --clr-secondary-400: #48556A;
-    --clr-betty: #7887a0;
+    --clr-betty: #83878d;
 
     --font-family-text: "Poppins", sans-serif;
     --font-family-headings: "E B Garamond", serif;
@@ -355,12 +355,12 @@ span {
 
 .card__betty .person, 
 .card__betty p {
-    color: var(--bg-clr);
+    color: var(--text-clr);
     padding-block-end: 1rem;
 }
 
 .card__betty h2 {
-    color: var(--clr-Black);
+    color: var(--h-color);
 }
 
 
