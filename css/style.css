@@ -14,8 +14,8 @@
     --shadow-clr: rgb(128, 114, 128);
     --shadow-light: rgb(59, 58, 58);
     --clr-secondary-400: #48556A;
-    --betty-clr: #7e8ba1;
-    --nina-clr: #a4aec0;
+    --betty-clr: #78859c;
+    --nina-clr: #a0aab8;
 
     --font-family-text: "Poppins", sans-serif;
     --font-family-headings: "E B Garamond", serif;
@@ -195,11 +195,26 @@ main {
     padding-block-start: 3rem;
 }
 
-.grid-3-col {
+.dogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-inline: 1rem;
     gap: 1rem;
+ @media (width <= 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+ }
+ @media (width <= 600px) {
+    grid-template-columns: 1fr;
+ }
 }
+
+.tie-dog {
+    @media (width <= 1000px) {
+        display: none;
+    }
+}
+
+
 
 .bronte, .cavvy, .gate-dog, .kuzie, .poppy, .millie2, .paddy3,
 .tie-dog, .ziggy {
@@ -340,7 +355,7 @@ span {
 } 
 
 .card__nina {
-    background-color: var(--betty-clr);
+    background-color: var(--nina-clr);
     
 }
 
@@ -375,14 +390,14 @@ span {
     grid-area: peter;
 }
 .article3 {
-    grid-area: betty;
+    grid-area: alex;
 }
 .article4 {
-    grid-area: alex;
+    grid-area: nina;
 }
 
 .article5 {
-    grid-area: nina;
+    grid-area: betty;
 }
 
 .cards {
@@ -405,12 +420,254 @@ span {
         "alex alex";
     }
 
-@media (width >= 1200px) {
+@media (width >= 1400px) {
      grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
         grid-template-areas: 
-        "tina tina peter alex"
-        "betty nina nina alex";
+        "alex alex nina tina"
+        "betty peter peter tina";
 }
 
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (width < 600px) {
+        display: none;
+    }
+}
+
+.reviews h2 {
+    margin-block: 2rem;
+    padding-block-end: 1rem;
+}
+form {
+    display: grid;
+    gap: 1rem;
+    /*margin-inline: 4rem;
+    */background-color: var(--background-light);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px var(--shadow-clr);
+    margin-block-end: 2rem;
+
+}
+
+
+/* .star-ratings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+} */
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+    color: var(--text-clr);
+    font-weight: bold;
+ 
+}
+
+textarea {
+    border-radius: 10px;
+  
+}
+
+input[type='text'],
+input[type='email'],
+input[type='radio'] {
+    border-radius: 10px ;
+    height: 50px;
+    cursor: pointer;
+}
+
+textarea {
+    block-size: 150px;
+  
+    }
+
+ul {
+    display: flex;
+    gap: 5rem;
+    @media (width <= 600px) {
+        gap: 4rem;
+    }
+}
+ul.stars {
+    /* gap: 4rem; */
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+                            /* Formatting the radio buttons */
+ul.stars li {
+    /* display: inline-block; */
+    color: white;
+    text-shadow: 5px 4px 2px grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul.stars li:hover {
+    background-color: var(--link-clr);
+    font-size: 2rem;
+}
+
+ul.stars li.active, ul.stars li.secondary-active {
+    background-color: var(--link-clr);
+    font-size: 2rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input:focus, 
+textarea:focus {
+    outline: 1px solid var(--link-clr);
+    border-radius: 5px;
+   background-color: var(--text-clr);
+}
+
+button[type='submit'] {
+    background: var(--link-clr);
+    color: var(--text-clr);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+   font-size: 2rem;
+   margin-inline: 7rem;
+}.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (width < 600px) {
+        display: none;
+    }
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (width < 600px) {
+        display: none;
+    }
+}
+
+.reviews h2 {
+    margin-block: 2rem;
+    padding-block-end: 1rem;
+}
+form {
+    display: grid;
+    gap: 1rem;
+    /*margin-inline: 4rem;
+    */background-color: var(--background-light);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px var(--shadow-clr);
+    margin-block-end: 2rem;
+
+}
+
+
+/* .star-ratings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+} */
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+    color: var(--text-clr);
+    font-weight: bold;
+ 
+}
+
+textarea {
+    border-radius: 10px;
+  
+}
+
+input[type='text'],
+input[type='email'],
+input[type='radio'] {
+    border-radius: 10px ;
+    height: 50px;
+    cursor: pointer;
+}
+
+textarea {
+    block-size: 150px;
+  
+    }
+
+ul {
+    display: flex;
+    gap: 5rem;
+    @media (width <= 600px) {
+        gap: 4rem;
+    }
+}
+ul.stars {
+    /* gap: 4rem; */
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+}
+                            /* Formatting the radio buttons */
+ul.stars li {
+    /* display: inline-block; */
+    color: white;
+    text-shadow: 5px 4px 2px grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul.stars li:hover {
+    background-color: var(--link-clr);
+    font-size: 2rem;
+}
+
+ul.stars li.active, ul.stars li.secondary-active {
+    background-color: var(--link-clr);
+    font-size: 2rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#gifts {
+    @media (width <= 900px){
+        margin-block-start: 3rem;
+    }
+}
+
+
+input:focus, 
+textarea:focus {
+    outline: 1px solid var(--link-clr);
+    border-radius: 5px;
+   background-color: var(--text-clr);
+}
+
+button[type='submit'] {
+    background: var(--link-clr);
+    color: var(--text-clr);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+   font-size: 2rem;
+   margin-inline: 7rem;
 }
