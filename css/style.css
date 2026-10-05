@@ -39,6 +39,15 @@
    
 
   --fluid-14-24: clamp(0.875rem, 0.7105rem + 0.8772vw, 1.5rem);
+
+    --space-3xs-2xs: clamp(0.3125rem, 0.2273rem + 0.4545vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4602rem + 0.5455vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7727rem + 0.5455vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.9205rem + 1.0909vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.4659rem + 1.1818vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.8409rem + 2.1818vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.9318rem + 2.3636vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.6818rem + 4.3636vw, 7.5rem);
 }
 
 img {
@@ -86,6 +95,14 @@ a {
     color: var(--link-clr);
 }
 
+.container {
+     max-inline-size: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
 menu a {
     color: white;
     font-size: var(--text-size--1);
@@ -100,9 +117,7 @@ menu a {
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+ 
     background-color: black;
     color: var(--text-clr);
     font-family: var(--font-family-text);
@@ -123,12 +138,99 @@ footer .brand-identifier {
     align-items: center;
 }
 
+.cards__eric {
+    position: relative;
+    @media (width <= 600px) {
+        margin-block: 0;
+    }
+}
+
+.card1__eric {
+    grid-area: card1-eric;
+}
+
+.card1__eric h2 {
+    padding-block-end: 0;
+}
+
+.card2__eric {
+    grid-area: card2-eric;
+}
+
+
+
+.cards__eric {
+    position: relative;
+    max-inline-size: 100%;
+    font-size: var(--text-size-2);
+    text-align: center;
+    padding: 0rem;
+    gap: 3rem;
+       display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "card1-eric"
+    "card2-eric";
+    @media (width >= 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "card1-eric ."
+        ". card2-eric";
+    }
+}
+
+.card2__eric {
+    position: absolute;
+    bottom: 5px;
+    @media (width <= 600px) {
+        position: relative;
+        top: -40px;
+
+    }
+}
+
+.cards__eric h2 {
+    font-size: var(--heading-size-0);
+    margin-bottom: 10px;
+}
+
+
+
+.wide__only {
+    color: var(--text-clr);
+    display: block;
+    @media (width <=600px) {
+    display: none;
+    }
+}
+
 .grid-2-col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-inline: 1.5rem;
     margin-block: 1rem;
+    @media (width <= 800px) {
+        grid-template-columns: 1fr;
+        padding-block-start: -5rem;
+    }
+    }
+
+
+.introduction {
+    margin-block-start: 4rem;
+    @media (width <= 900px) {
+        inline-size: 90%;
+        padding-inline: 0;
+        margin-inline: 0;
+    }
+}
+
+.introduction .image {
+   padding-block: var(--space-2xl-3xl);
+    @media (width <= 900px) {
+    display: none;
+    }
 }
 
 .wrapper {
@@ -140,11 +242,19 @@ footer .brand-identifier {
     justify-content: left;
     align-items: center;
     padding-inline-start: 1.5rem;
-    /* padding-block: .5rem; */
+    font-size: var(--text-size--1);
+    @media (width <= 900px) {
+        font-size: var(--text-size-0);
+        grid-column: span2
+    }
+    @media (width <= 600px) {
+        font-size: var(--text-size-1);
+    }
+
 }
 
 .wrapper h2 {
-    font-size: var(--heading-size-0);
+    font-size: var(--heading-size-1);
 }
 
 menu ul {
@@ -154,13 +264,7 @@ menu ul {
     gap: 2rem;
 }
 
-.container {
-     width: 1400px;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 2rem;
 
-}
 
 main {
       display: flex;
