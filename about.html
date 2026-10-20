@@ -7,39 +7,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="css/style.css">
-    <title>Tweedle Dee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Tweedle Dum</title>
 </head>
 <body>
-    
-    <header>
-        <div class="brand-identifier">
-            <div class="logo">
-                <img src="Images/SiteLogo.webp" alt="">
-            </div>
-            <div class="tagline"><p>Best in the Southern Highlands</p></div>
+    <div class="container">
+  
+       <nav class="navbar">
+      <div class="navbar-flex">
+        <div class="branding">
+          <img src="Images/SiteLogo.webp" alt="Shazza's Grooming" class="logo" />
+          <div class="tagline">Best in the Southern highlands</div>
         </div>
-        <menu>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a class="active"href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="prepare.html">Prepare</a></li>
+        <!-- Main Menu -->
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="current" href="about.html">About</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="prepare.html">Prepare</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="current" href="about.html">About</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="prepare.html">Prepare</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
             </ul>
-        </menu>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    </header>
+   
 
     <main>
-
+      <h1>Hi, I'm Sharon Smith</h1>
+<div class="grid-2-col sharon-intro">
+  <img src="Images/Sharon new background 2.JPG" alt="">
+  <div class="wrapper">
+      <p>I have had 12 years experience in the dog grooming industry.</p>
+      <p>I worked for 6 years as a bather for an experienced professional dog 
+        groomer who taught me many grooming techniques as well as clipping and 
+        styling of different breeds of dogs. </p>
+      <p>I had been grooming dogs for my friends for years and, 4 years ago, 
+        decided to branch out.</p>
+      <p>So I purchased a mobile dog grooming trailer and started grooming 
+        professionally.</p>
+      <p>I also decided to take some courses in dog grooming</p>
+      <p>My aim is to keep your dog looking great but, more than that, <span>to keep them happy while being 
+        groomed.</span></p>
+  </div>
+</div>
 
 
     </main>
 
-    <footer>
-
+  <footer>
+    <div class="tagline-footer"><h3>Southern Highland's best</h3></div>
+    <div class="ip">
+      <p>Copyright &copy Shazza's Grooming 2027</p>
+    </div>
+      <a href="/#top" class="btn-internal">Back to Menu</a>
         
-    </footer>
+  </footer>
+    </div>
+     <script src="js/script.js"></script>
 </body>
 </html>

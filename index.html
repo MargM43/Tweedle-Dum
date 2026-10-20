@@ -14,24 +14,61 @@
 </head>
 <body>
     <div class="container">
-    <header>
-        <div class="brand-identifier">
-            <div class="logo">
-                <img src="Images/SiteLogo.webp" alt="Site Logo">
-            </div>
-            <div class="tagline"><p>Best in the Southern Highlands</p></div>
+     <p class="" id="top"></p>
+       <nav class="navbar">
+      <div class="navbar-flex">
+        <div class="branding">
+          <img src="Images/SiteLogo.webp" alt="Shazza's Grooming" class="logo" />
+          <div class="tagline">Best in the Southern highlands</div>
         </div>
-        <menu>
-            <ul>
-                <li><a class="active"href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="prepare.html">Prepare</a></li>
+        <!-- Main Menu -->
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li>
+              <a class="current" href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="prepare.html">Prepare</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="current" href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="prepare.html">Prepare</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
             </ul>
-        </menu>
-
-    </header>
+          </div>
+        </div>
+      </div>
+    </nav>
+   
 
     <main>
         <div class="main">
@@ -91,9 +128,11 @@
             <div class="tie-dog"></div>
             <div class="ziggy"></div>
         </div>
-        <div class="gift-idea"><h2>Need a gift idea? See below.
-        <i class="fa-solid fa-arrow-turn-down"></i></h2></div>
-         <h2>Happy people</h2>  
+        <div class="gift-idea">
+          <a href="#gifts">
+            <h2>Gift idea?<i class="fa-solid fa-narrow-turn-down"></i></h2>
+          </a>
+        </div>
          <div class="container__testimonials">
     <div class="cards">
       <article class="article1 card card__tuantina ">
@@ -225,37 +264,47 @@
 
         </div>
         
-        <!-- </div>
-        </div> -->
+       <!-- copy of gift certificate from live website -->
+ 
+       <h2 id="gifts"><span>... and about that gift idea...</span></h2>
+      
+
+       <div class="gift-certificate">
+        
+        <h3 class="gift-card-heading">Sharon offers customised gift cards, 
+          like the one below, from as little as $20.</h3>
+        <div class="gift-card">
+            <div class="image">
+                
+                <img src="images/BusinessCard.webp" alt="business card with phone number">
+                <div class="phone">
+                    <p><i class="fa-solid fa-phone"></i></p>
+                    <p>0447 442 770</p>
+                </div>
+            </div>
+            <div class="text">
+                <h3>gift certificate</h3>
+                <p>to:</p>
+                <p>from:</p>
+                <p>amount:</p>
+                <p>signature</p>
+            </div>
+          </div>
+            <h3 class="gift-card-heading">Call her on 0447 442 770 
+              or <a href="mailto:sharonsmith888@icloud.com">email her </a>to put in your order for one.</h3>
+        
+       </div>
     </main>
 
-    <footer>
-         <div class="brand-identifier">
-            <div class="logo">
-                <img src="Images/SiteLogo.webp" alt="Site Logo">
-            </div>
-            <div class="tagline"><p>Best in the Southern Highlands</p></div>
-        </div>
-        <menu>
-            <ul>
-                <li><a class="active"href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="prepare.html">Prepare</a></li>
-            </ul>
-        </menu>
+  <footer>
+    <div class="tagline-footer"><h3>Southern Highland's best</h3></div>
+    <div class="ip">
+      <p>Copyright &copy Shazza's Grooming 2027</p>
+    </div>
+      <a href="/#top" class="btn-internal">Back to Menu</a>
         
-    </footer>
+  </footer>
 </div>
-    <script>
-        $('li').on('click',function() {
-            $('li').removeClass('active');
-            $('li').removeClass('secondary-active');
-            $(this).addClass('active');
-            $(this).prevAll().addClass('secondary-active');
-           
-        })
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
