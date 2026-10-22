@@ -105,12 +105,9 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--link-clr);
+    /* color: var(--link-clr); */
 }
 
-.current {
-    color: var(--link-clr);
-}
 
 .container {
      max-inline-size: 1200px;
@@ -118,10 +115,14 @@ a {
     margin: 0 auto;
     padding: 2rem;
     background-color: var(--bg-clr);
+    @media (width <= 600px) {
+        width: 95%;
+    }
 }
 
 .main {
-    margin-block: 3rem
+    margin-block: 3rem;
+
     }
 
 .main-menu-list a {
@@ -134,7 +135,7 @@ a {
 }
 
 body {
- 
+    block-size: 100svb;
     background-color: black;
     color: var(--text-clr);
     font-family: var(--font-family-text);
@@ -168,19 +169,17 @@ body {
   color: var(--link-clr);
 }
 
-.navbar .main-menu-list {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
 
 .navbar a {
-  color: #fff;
+    color: #fff;
 }
 
-.navbar a:hover,
-.navbar a:active {
-  color: var(--link-clr);
+.navbar a:hover {
+    .navbar .current  color: var(--link-clr);
+}
+
+.current {
+    color: var(--link-clr);
 }
 
 .navbar .mobile-menu {
@@ -189,17 +188,17 @@ body {
 
 /* Mobile Menu */
 .navbar .mobile-menu-items {
-  background-color: #000;
-  z-index: 999;
-  position: absolute;
-  top: 110px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #000;
-  text-align: center;
-  transition: transform 0.7s ease;
-  transform: translateX(100%);
+    background-color: #000;
+    z-index: 999;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    transition: transform 0.7s ease;
+    transform: translateX(100%);
 }
 
 .navbar .mobile-menu-list {
@@ -217,6 +216,8 @@ body {
 .navbar .mobile-menu-list a:hover {
   color: var(--link-clr);
 }
+
+
 
 .navbar .mobile-menu-toggle {
   cursor: pointer;
@@ -339,6 +340,13 @@ body {
     }
 
 }
+
+/* .wrapper {
+    @media (width <= 600px) {
+        inline-size: 400px;
+        max-inline-size: 95%;
+    }
+} */
 
 .wrapper h2 {
     font-size: var(--heading-size-1);
@@ -982,7 +990,5 @@ footer {
 }
 
 @media (width <= 451px) {
-    .tagline {
-        display: none;
-    }
+ 
 }
