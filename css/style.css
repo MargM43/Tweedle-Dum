@@ -982,8 +982,8 @@ footer {
 }
 
 .btn-internal:hover {
-  background-color: #000;
-  color: var(--link-clr);
+  background-color: #fff;
+  color: var(--link-clr;
 }
 
 
