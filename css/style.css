@@ -105,12 +105,28 @@ ul {
 
 a {
     text-decoration: none;
-    /* color: var(--link-clr); */
+    color: #fff;
+}
+
+span {
+    color: var(--link-clr);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    block-size: 100svb;
+    background-color: black;
+    color: var(--text-clr);
+    overflow-x: hidden;
+    font-family: var(--font-family-text);
+    font-size: var(--text-size--1);
 }
 
 
 .container {
      max-inline-size: 1200px;
+    
     width: 80%;
     margin: 0 auto;
     padding: 2rem;
@@ -120,27 +136,7 @@ a {
     }
 }
 
-.main {
-    margin-block: 3rem;
 
-    }
-
-.main-menu-list a {
-    color: white;
-    font-size: var(--text-size--1);
-}
-.main-menu-list a:hover {
-    color: var(--link-clr);
-    font-size: var(--text-size--1);
-}
-
-body {
-    block-size: 100svb;
-    background-color: black;
-    color: var(--text-clr);
-    font-family: var(--font-family-text);
-    font-size: var(--text-size--1);
-}
 
 .navbar {
   background: #000;
@@ -157,7 +153,8 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.branding{
+
+.branding {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,24 +166,32 @@ body {
   color: var(--link-clr);
 }
 
+.navbar .main-menu-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
 
-.navbar a {
-    color: #fff;
+
+.navbar .main-menu-list a {
+    /* color: white; */
+    font-size: var(--text-size--1);
 }
 
 .navbar a:hover {
-    .navbar .current  color: var(--link-clr);
-}
-
-.current {
     color: var(--link-clr);
 }
+.navbar .main-menu-list a.current {
+    color: var(--link-clr);
+    font-size: var(--text-size--1);
+}
+
+/* Mobile Menu */
 
 .navbar .mobile-menu {
     display: none;
 }
 
-/* Mobile Menu */
 .navbar .mobile-menu-items {
     background-color: #000;
     z-index: 999;
@@ -210,10 +215,14 @@ body {
   padding-top: 18.7rem;
   gap: 2rem;
   font-size: 1.2rem;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
-.navbar .mobile-menu-list a:hover {
+/* .navbar .mobile-menu-list a {
+    color: #fff;
+} */
+
+.navbar .mobile-menu-list a.current {
   color: var(--link-clr);
 }
 
