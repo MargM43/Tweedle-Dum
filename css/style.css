@@ -726,7 +726,7 @@ ul.stars li:hover {
     font-size: 2rem;
 }
 
-ul.stars li.active, ul.stars li.secondary-active {
+ul.stars li.live, ul.stars li.secondary-live {
     background-color: var(--link-clr);
     font-size: 2rem;
 }
@@ -847,7 +847,7 @@ ul.stars li:hover {
     font-size: 2rem;
 }
 
-ul.stars li.active, ul.stars li.secondary-active {
+ul.stars li.live, ul.stars li.secondary-live {
     background-color: var(--link-clr);
     font-size: 2rem;
 }
