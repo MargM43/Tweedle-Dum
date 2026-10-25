@@ -345,7 +345,8 @@ body {
    
 }
 
-.dog-bath h3 {
+.dog-bath h3,
+.reiki h3 {
     margin-block-end: 2rem;
     font-size: var(--heading-size--1);
 }
