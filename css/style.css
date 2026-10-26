@@ -825,14 +825,6 @@ form {
 
 }
 
-
-/* .star-ratings {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 3rem;
-} */
-
 label {
     display: block;
     margin-bottom: .3rem;
@@ -843,7 +835,6 @@ label {
 
 textarea {
     border-radius: 10px;
-  
 }
 
 input[type='text'],
@@ -1027,6 +1018,24 @@ footer {
   color: var(--link-clr);
 }
 
+/* About page */
+
+.about .wrapper {
+    @media (width <= 800px) {
+        display: none;
+    }
+}
+
+.extra-courses,
+.diploma {
+    margin-block-start: 2rem;
+}
+
+.extra-courses h3,
+.diploma h3 {
+    padding-block-end: 1.5rem;
+    font-size: var(--heading-size-0);
+}
 
 
 @media (max-width: 768px) {
