@@ -190,6 +190,7 @@ body {
 
 .navbar .mobile-menu {
     display: none;
+
 }
 
 .navbar .mobile-menu-items {
@@ -207,7 +208,7 @@ body {
 }
 
 .navbar .mobile-menu-list {
-    
+    position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
