@@ -238,7 +238,6 @@ body {
 
 
 .navbar .mobile-menu-items.active {
-    position: relative;
   transform: translateX(0);
 }
 
