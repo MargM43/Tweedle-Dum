@@ -238,6 +238,7 @@ body {
 
 
 .navbar .mobile-menu-items.active {
+    position: relative;
   transform: translateX(0);
 }
 
@@ -336,12 +337,12 @@ body {
 
 .dog-bath {
     margin-block: 2rem;
-    size: 100vw;
+    
 }
 .dog-bath video {
        display: flex;
    justify-content: center;
-   object-fit: cover;
+   max-inline-size: 100%;
    
 }
 
