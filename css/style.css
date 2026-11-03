@@ -314,6 +314,15 @@ body {
     }
     }
 
+    .grid-3-col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-block: 2rem;
+        text-align: center;
+        font-size: var(--text-size-0);
+}
+
 .sharon-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1038,6 +1047,21 @@ footer {
     font-size: var(--heading-size-0);
 }
 
+
+/* Services page */
+.services-intro h3 {
+    font-size: var(--heading-size-0);
+}
+
+
+.prices h3 {
+    font-size: var(--heading-size-0);
+    padding-top: 1rem;
+}
+
+.prices i {
+    color: var(--link-clr);
+}
 
 @media (max-width: 768px) {
   .navbar .main-menu {
