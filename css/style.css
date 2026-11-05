@@ -213,20 +213,6 @@ body {
 
 }
 
-/* .navbar .mobile-menu-items {
-    background-color: #000;
-    z-index: 999;
-    position: absolute;
-    top: 110px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #000;
-    text-align: center;
-    transition: transform 0.7s ease;
-    transform: translateX(100%);
-} */
-
 .navbar .mobile-menu-list {
     position: relative;
   display: flex;
@@ -236,12 +222,8 @@ body {
   padding-top: 18.7rem;
   gap: 2rem;
   font-size: 1.2rem;
-  /* z-index: 999; */
 }
 
-/* .navbar .mobile-menu-list a {
-    color: #fff;
-} */
 
 .navbar .mobile-menu-list a.current {
   color: var(--link-clr);
@@ -256,12 +238,6 @@ body {
 .mobile-menu-toggle i {
   color: #fff;
 }
-
-
-/* .navbar .mobile-menu-items.active {
-  transform: translateX(0);
-} */
-
 
 
 /* Eric */
@@ -421,24 +397,10 @@ body {
 
 }
 
-/* .wrapper {
-    @media (width <= 600px) {
-        inline-size: 400px;
-        max-inline-size: 95%;
-    }
-} */
 
 .wrapper h2 {
     font-size: var(--heading-size-1);
 }
-
-/* menu ul {
-    display: flex;
-    align-self: center;
-    padding-top: 1.5rem;
-    gap: 2rem;
-} */
-
 
 
 main {
@@ -468,9 +430,6 @@ main {
 }
 
 .image {
-      /* display: inline-flex;
-    flex-direction: column;
-    align-self: center; */
     padding-block-start: 3rem;
 }
 
@@ -539,7 +498,7 @@ main {
 }
 
 .ziggy {
-    background-image: url(/Images/Ziggy.webp);
+    background-image: url(/Images/image0.jpeg);
     background-position: top;
 }
 
@@ -734,25 +693,15 @@ form {
 
 }
 
-
-/* .star-ratings {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 3rem;
-} */
-
 label {
     display: block;
     margin-bottom: .3rem;
     color: var(--text-clr);
     font-weight: bold;
- 
 }
 
 textarea {
     border-radius: 10px;
-  
 }
 
 input[type='text'],
@@ -765,7 +714,6 @@ input[type='radio'] {
 
 textarea {
     block-size: 150px;
-  
     }
 
 ul {
@@ -776,7 +724,6 @@ ul {
     }
 }
 ul.stars {
-    /* gap: 4rem; */
     margin: 0 auto; 
     justify-content: center;
     align-items: center;
@@ -785,7 +732,6 @@ ul.stars {
 }
                             /* Formatting the radio buttons */
 ul.stars li {
-    /* display: inline-block; */
     color: white;
     text-shadow: 5px 4px 2px grey;
     font-size: 1.5rem;
@@ -821,13 +767,6 @@ button[type='submit'] {
     cursor: pointer;
    font-size: 2rem;
    margin-inline: 7rem;
-}.reviews {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (width < 600px) {
-        display: none;
-    }
 }
 
 .reviews {
@@ -846,13 +785,11 @@ button[type='submit'] {
 form {
     display: grid;
     gap: 1rem;
-    /*margin-inline: 4rem;
-    */background-color: var(--background-light);
+    background-color: var(--background-light);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 5px var(--shadow-clr);
     margin-block-end: 2rem;
-
 }
 
 label {
@@ -865,6 +802,7 @@ label {
 
 textarea {
     border-radius: 10px;
+     block-size: 150px;
 }
 
 input[type='text'],
@@ -874,11 +812,6 @@ input[type='radio'] {
     height: 50px;
     cursor: pointer;
 }
-
-textarea {
-    block-size: 150px;
-  
-    }
 
 ul {
     display: flex;
@@ -897,7 +830,6 @@ ul.stars {
 }
                             /* Formatting the radio buttons */
 ul.stars li {
-    /* display: inline-block; */
     color: white;
     text-shadow: 5px 4px 2px grey;
     font-size: 1.5rem;
@@ -957,7 +889,6 @@ button[type='submit'] {
       border-radius: 10px;
     border: 2px solid var(--nina-clr);
     box-shadow: 5px 5px 10px var(--shadow-clr);
-    /* padding-block: 2rem; */
     @media (width <= 900px) {
         display: none;
     }
@@ -1073,15 +1004,32 @@ footer {
     font-size: var(--heading-size-0);
 }
 
-
+.price-guide h2 {
+    margin-block: 0;
+}
 .prices h3 {
     font-size: var(--heading-size-0);
     padding-top: 1rem;
+    color: #fff;
 }
 
 .prices i {
     color: var(--link-clr);
+    size: var(--heading-size-1);
 }
+
+.price-guide h2 {
+    margin-bottom:  1rem;
+}
+.small h3,
+.medium h3,
+.large h3 {
+    color: #fff;
+    font-size: var(--heading-size--1);
+    padding-block-end: 1rem;
+}
+
+
 
 @media (max-width: 768px) {
   .navbar .main-menu {
