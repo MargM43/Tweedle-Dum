@@ -692,8 +692,7 @@ span {
 form {
     display: grid;
     gap: 1rem;
-    /*margin-inline: 4rem;
-    */background-color: var(--background-light);
+    background-color: var(--background-light);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 5px var(--shadow-clr);
@@ -781,9 +780,9 @@ button[type='submit'] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (width < 600px) {
+    /* @media (width < 600px) {
         display: none;
-    }
+    } */
 }
 
 .reviews h2 {
