@@ -68,6 +68,13 @@ img {
     max-inline-size: 100%;
 }
 
+video {
+    inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+}
+
+
 header img,
 footer img {
     max-block-size: 4rem;
@@ -347,7 +354,8 @@ body {
 .dog-bath video {
        display: flex;
    justify-content: center;
-   max-inline-size: 100%;
+   inline-size: 100%;
+   block-size: auto;
    
 }
 
@@ -498,7 +506,7 @@ main {
 }
 
 .ziggy {
-    background-image: url(/Images/image0.jpeg);
+    background-image: url(/Images/ziggy.jpeg);
     background-position: top;
 }
 
@@ -1029,6 +1037,14 @@ footer {
     padding-block-end: 1rem;
 }
 
+                    /* Prepare page */
+
+.preparation-list {
+    display: flex;
+    flex-direction: column;
+    padding-block-start: 0;
+    margin-block-end: o;
+}
 
 
 @media (max-width: 768px) {
