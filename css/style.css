@@ -1031,7 +1031,7 @@ footer {
   color: var(--link-clr);
 }
 
-/* About page */
+                            /* About page */
 
 .about .wrapper {
     @media (width <= 800px) {
@@ -1051,9 +1051,15 @@ footer {
 }
 
 
-/* Services page */
+                        /* Services page */
 .services-intro h3 {
     font-size: var(--heading-size-0);
+}
+
+.services-intro .wrapper {
+    @media (width <= 700px) {
+        display: none;
+    }
 }
 
 .price-guide h2 {
