@@ -197,6 +197,9 @@ body {
 
 .tagline {
   color: var(--link-clr);
+  @media (width <= 950px) {
+    display: none;
+  }
 }
 
 .navbar .main-menu-list {
@@ -306,9 +309,9 @@ body {
 .wide__only {
     color: var(--text-clr);
     display: block;
-    @media (width <=600px) {
+    /* @media (width <=600px) {
     display: none;
-    }
+    } */
 }
 
 .grid-2-col {
