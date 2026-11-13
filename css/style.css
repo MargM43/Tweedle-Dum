@@ -1141,6 +1141,11 @@ footer {
     padding-inline-start: 1.5rem;
 }
 
+.long {
+    width: 100%;
+    margin-block-start: 2rem;
+}
+
 .three-parties ul {
     gap: 1rem;
 }
@@ -1195,6 +1200,10 @@ footer {
     max-block-size: 600px;
 }
 
+.good-prep h3 {
+    font-size: var(--text-size-2);
+    margin-block-end: 2rem;
+}
 
 
 
