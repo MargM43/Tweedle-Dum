@@ -63,6 +63,7 @@ body {
   block-size: 100%;
 }
 
+
 img {
     max-block-size: 100%;
     max-inline-size: 100%;
@@ -1124,6 +1125,11 @@ footer {
     line-height: 1;
 }
 
+.grooming-list li {
+    font-size: var(--text-size-0);
+    letter-spacing: 5px;
+}
+
 #best {
     display: flex;
     justify-content: center;
@@ -1132,6 +1138,7 @@ footer {
 .tick {
     font-size: var(--heading-size-1);
     color: var(--link-clr);
+    padding-inline-start: 1.5rem;
 }
 
 .three-parties ul {
@@ -1150,7 +1157,7 @@ footer {
 }
 
 #your-part li {
-     padding-inline-start: 6rem;
+     padding-inline-start: 4rem;
 }
 
 #best i {
