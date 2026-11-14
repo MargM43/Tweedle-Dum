@@ -156,6 +156,7 @@ body {
   padding: 1rem 2rem;
   height: 110px;
   position: relative;          /* NEW: panel now positions against the navbar */
+
 }
 
 .navbar .mobile-menu-items {
@@ -238,6 +239,9 @@ body {
   padding-top: 18.7rem;
   gap: 2rem;
   font-size: 1.2rem;
+  @media (height < 700px) {
+    padding-block-start: 10rem;
+  }
 }
 
 
@@ -1243,5 +1247,7 @@ iframe {
 }
 
 @media (width <= 451px) {
- 
+ .navbar .mobile-menu {
+    margin-block-start: -5rem;
+ }
 }
