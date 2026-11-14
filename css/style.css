@@ -243,8 +243,8 @@ body {
     padding-block-start: 10rem;
   }
   /* even shorter screens sizes */
-  @media(height < 655px) {
-    padding-block-start: 6rem;
+  @media (height < 655px) {
+    padding-top: 3rem;
   }
 }
 
