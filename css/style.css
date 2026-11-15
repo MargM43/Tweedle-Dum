@@ -55,7 +55,7 @@
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'EB Garamond', serif;
   line-height: 1.6;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -102,13 +102,21 @@ h2 {
     text-align: center;
     margin-block: 4rem;
     font-size: var(--heading-size-1);
-    
- 
+}
+
+p {
+    font-family: "EB Garamond", serif;
+    font-size: var(--text-size-1);
 }
 
 ul {
     list-style: none;
 }
+
+li {
+    font-family: "EB Garamond", serif;
+}
+
 
 a {
     text-decoration: none;
@@ -1105,8 +1113,8 @@ footer {
     padding-block: 2.5rem;
     padding-inline-start: 1rem;
     color: var(--text-clr);
-    border: 2px solid var(--shadow-clr);
-   box-shadow: 5px 5px 10px var(--shadow-clr);
+    /* border: 2px solid var(--shadow-clr);
+   box-shadow: 5px 5px 10px var(--shadow-clr); */
     font-weight: 800;
     border-radius: .6rem;
 }
@@ -1134,9 +1142,42 @@ footer {
 }
 
 .grooming-list li {
-    font-size: var(--text-size-0);
-    letter-spacing: 5px;
+    font-family: "EB Garamond";
+    font-size: var(--text-size-1);
+    letter-spacing: 3px;
 }
+
+.prep-intro h3 {
+    font-family: "EB Garamond";
+    font-size: var(--text-size-2);
+}
+
+.prep-reasons {
+    margin-block: 2rem;
+}
+
+.prep-reasons ul {
+       display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+    padding-block: 1rem;
+      gap: 2rem;
+       padding-inline-start: 3rem;
+    border: 2px solid var(--shadow-clr);
+   box-shadow: 5px 5px 10px var(--shadow-clr); 
+}
+
+ul p {
+    font-family: "EB Garamond", serif;
+    font-size: var(--text-size-2);
+    color: var(--link-clr);
+}
+
+.prep-reasons li {
+    list-style: disc;
+    font-size: var(--text-size-1);
+}
+
 
 #best {
     display: flex;
@@ -1144,7 +1185,7 @@ footer {
 }
 
 .tick {
-    font-size: var(--heading-size-1);
+    font-size: var(--heading-size-2);
     color: var(--link-clr);
     padding-inline-start: 1.5rem;
 }
@@ -1196,6 +1237,14 @@ footer {
     letter-spacing: 1.1px;
 }
 
+.grooming-problems .tick,
+.dematting .tick,
+.other-problems .tick,
+.good-prep .tick,
+.line .tick {
+    color: #fff;
+}
+
 .other-problems {
     margin-block-start: 2rem;
 }
@@ -1210,6 +1259,10 @@ footer {
 
 .good-prep h3 {
     font-size: var(--text-size-2);
+    margin-block-end: 2rem;
+}
+
+.good-prep p {
     margin-block-end: 2rem;
 }
 
